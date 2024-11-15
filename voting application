@@ -1,0 +1,23 @@
+// voting application
+// also check datatype of user input
+
+
+let voterAge=prompt();
+
+let voterAge_Int = parseInt(voterAge);
+
+if(voterAge_Int>=0 && voterAge_Int<18)
+{
+    alert("Sorry!You are not eligible to be a voter")
+}
+else if(voterAge_Int>=18 && voterAge_Int<=99)
+{
+    alert("Congratulations!Your are eligible to be a voter")
+}
+else if(voterAge_Int>=100 && voterAge_Int<=120)
+{
+    alert("Seinor Citizen!Congratulation you are most welcome to be a voter")
+}
+else{
+    alert("Please enter a valid age!")
+}
