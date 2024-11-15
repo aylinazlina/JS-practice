@@ -1,0 +1,23 @@
+// even odd application
+// also check datatype of user input
+// == means checking value
+//=== checking checking value and datatype
+
+let x =prompt("Enter a number:");
+
+let x_Int =parseInt(x);
+
+
+if(x_Int%2===0)
+{
+    alert("even");
+}
+else if(x_Int%2===1)
+{
+    alert("odd")
+}
+else
+{
+    alert("Please enter valid number!")
+}
+
