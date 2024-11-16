@@ -1,0 +1,13 @@
+
+    /* [] -Array Literal
+     syntax ====>const arr =[1,2,3,"Aylin","Anushka"];
+     best====> simple,clean,readable,less error prone,commonly used(easily recognized)
+     */
+
+    /* new Array()
+        syntax=====> const arr =new Array(1,2,3,4,"Aylin","Anushka");
+        allows to create empty array with specific length const arr =new Array(5);
+        it can create confusion ===> const arr =new Array(5) ===>length of Array is 5
+        but  const arr1 =new Array(1,2,3) ===> create an array with [1,2,3]
+    
+        less used */
