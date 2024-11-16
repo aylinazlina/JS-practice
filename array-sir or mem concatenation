@@ -1,0 +1,17 @@
+const mern2403 =['Lawrance','Tanjil','Nur','Emon','Hima','Imaran','Ismail',
+    'Rubel','Hridoy','Rifat','Jahangir','Nafis','Munsuin','Rabbi','Subroto',
+    'Sakib','Sohel','Sifat','Anushka','Aylin'];
+
+    for(let i=0; i<mern2403.length;i++)
+    {
+        if(mern2403[i]=='Aylin' || mern2403[i] =='Anushka' || mern2403[i] == 'Hima')
+        {
+            console.log(mern2403[i] + " mem");
+            
+        }
+        else
+        {
+            console.log(mern2403[i]+ " sir");
+            
+        }
+    }
