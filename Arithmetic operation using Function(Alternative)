@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern2403</title>
+</head>
+<body>
+   <h2 id="userinput_firstnumber"></h2>
+   <h2 id="userinput_secondnumber"></h2>
+   <h2 id="userinput_thirdnumber"></h2>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <h1 id="result"></h1>
+
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
+===================================================js file =====================================================
+
+function addition(num1 = 0,num2 = 0,num3 = 0){
+   const sum= num1+num2+num3;
+   return 'Sum: ' +sum
+
+}
+
+ function subtraction(num1 = 0,num2 = 0,num3 = 0){
+   const sub=num1 - num2 - num3;
+    return 'Subtraction: '+sub
+ 
+ }
+
+ function multiplication(num1 = 0,num2 = 0,num3 = 0){
+    const multi=num1 * num2 * num3;
+    return 'Multiplication: '+multi
+ 
+ }
+
+ function divison(num1 = 0,num2 = 1,num3 = 1){
+    const Divi= num1 / num2 /num3;
+    return 'Divison: '+Divi
+ 
+ }
+ 
+
+ function modulus(num1 = 0,num2 = 1,num3 = 1){
+    const Mod = num1 % num2 % num3;
+    return 'Modulus:'+Mod
+ 
+ }
+
+ function exponential(num1 = 1,num2 = 0,num3 = 0){
+    const Expo= num1 ** num2 ** num3;
+    return 'Exponential:'+Expo
+ 
+ }
+
+const user_input1 = parseInt(prompt('Enter 1st number:'));
+const user_input2 = parseInt(prompt('Enter 2nd number:'));
+const user_input3 = parseInt(prompt('Enter 3rd number:'));
+
+document.getElementById('userinput_firstnumber').innerHTML=user_input1;
+document.getElementById('userinput_secondnumber').innerHTML=user_input2;
+document.getElementById('userinput_thirdnumber').innerHTML=user_input3;
+
+
+let arithmetic_operations =[addition,subtraction,multiplication,divison,modulus,exponential];
+let resultHTML ='';
+for(let arithmetic_operation of arithmetic_operations){
+   resultHTML+=arithmetic_operation(user_input1,user_input2,user_input3)+"<br>";
+}
+
+document.getElementById("result").innerHTML =resultHTML;
