@@ -1,0 +1,59 @@
+const myFirstObject = {
+    batchName: 'Mern-2403',
+    totalStudent: 23,
+    isActive: true,
+    studentName: ['Aylin', 'Anushka', 'Lawrence', 'Hima', 'Tanjil'],
+    femaleStudentName: function () {
+        let femaleBlankArray = [];
+        for (let femaleStudent of this.studentName) {
+            if (femaleStudent == 'Aylin' || femaleStudent == 'Anushka' || femaleStudent == 'Hima') {
+                femaleBlankArray.push(femaleStudent)
+            }
+        }
+        console.log(femaleBlankArray);
+    },
+    maleStudentName: function () {
+        let maleBlankArray = []
+        for (let maleStudent of this.studentName) {
+            if (maleStudent == 'Lawrence' || maleStudent == 'Tanjil') {
+                maleBlankArray.push(maleStudent)
+            }
+        }
+        console.log(maleBlankArray);
+    },
+
+    mentor: {
+        mentorName: 'Taufik Islam',
+        department: "web and Software",
+        designation: 'Faculty Member and Stack Developer',
+        mentorList: ['Sohan', 'Tahsan', 'Wasim', 'Rajib', 'Sohel'],
+        departmentHead: 'Sohan Hasan Evan',
+        experience: 7,
+        educationBackground: 'BSC in CSS'
+    },
+
+    degitalMarketing: {
+        teamMember: 45,
+        teamMemberName: ['Raj', 'Rahul', 'Wasim'],
+        digitalMarketingHeadInfo: {
+            DHODHead: 'Arifen',
+            totalExperienc: 8,
+            getInfoOfHead: function (a) {
+                return (`Head of HOD is.....${this.DHODHead} ${a}  His experience is ${this.totalExperienc} Years`);
+
+
+            }
+        }
+    }
+};
+
+
+myFirstObject.femaleStudentName();
+
+const info = myFirstObject.degitalMarketing.digitalMarketingHeadInfo.getInfoOfHead('Ahmed');
+
+
+console.log(info)
+
+
+
