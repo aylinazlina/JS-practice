@@ -1,0 +1,101 @@
+//! ============ Array Methods ===============
+
+
+
+const fruits = ['Mango', 'Apple', 'Banana', 'Strawberry', 'Dragon', 'Orange'];
+
+//todo Sort
+let FruitsAll = fruits.sort();
+console.log(FruitsAll);
+
+//todo Indexof
+IndexOfDragon = fruits.indexOf('Dragon')
+console.log("Index of Dragon is :", IndexOfDragon);
+
+//todo lastIndexof
+let lastIndexOfStrawberry = fruits.lastIndexOf('Strawberry');
+console.log("Index of Strawberry from right to left is : ", lastIndexOfStrawberry)
+
+//todo find
+const fruits_1 = ['mango', 'apple', 'banana', 'dragon'];
+
+
+function ourfindMethod(value, index, array) {
+    console.log("Value:", value, "Index:", index, "Array:", array)
+
+}
+fruits_1.find(ourfindMethod);
+
+
+//todo find method with arrowfunction
+const flower = ['lily', 'rose', 'tulip', 'orchid'];
+console.log("Using Arrowfunction")
+flower.find((value, index, array) => {
+
+    console.log("Value:", value, "Index:", index, "Array:", array);
+});
+
+//todo find method with arrowfunction using return key
+const flower_1 = ['lily', 'rose', 'tulip', 'orchid'];
+let y = flower_1.find((value, index, array) => {
+
+    return value == 'rose';
+
+});
+console.log(y);
+
+//todo findIndex method
+const NandNumber=['Aylin','Anushka','Hima',20,50]
+
+let z= NandNumber.findIndex((value)=>{
+    return value=='20';
+});
+
+
+console.log("Index of 20 is :",z);
+
+//todo findlastIndex method
+
+const NameAndN=['Aylin','Anushka','Hima',20,50,'Aylin']
+
+const a=NameAndN.findLastIndex((value)=>{
+    return value=='Aylin';
+});
+
+
+console.log("Index of Aylin:",a);
+
+
+//todo map method
+
+const FullName=['Azlina','Arabi','Hossain','Aylin'];
+
+const lengths =FullName.map(elements=> elements.length)
+
+console.log("Azlina,Arabi,Hossain,Aylin:",lengths);
+
+
+//todo reverse method
+
+const num=[20,10,5,40,50,100,192,220,207];
+
+let reverse_num =num.reverse();
+console.log(reverse_num);
+
+//todo sort method for ascending and decending
+const num_1=[20,10,5,40,50,100,192,220,207];
+
+let ascending =num_1.sort((a,b)=>a-b);
+console.log("Ascending Order:",ascending);
+
+
+const decending=num_1.sort((a,b)=>b-a);
+console.log("Decending order:",decending);
+
+
+
+
+
+
+
+
