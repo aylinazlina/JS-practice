@@ -1,0 +1,38 @@
+class girl{
+    name
+   
+    
+    constructor(age,gender,country,nationality,university,address,hobby){
+       
+        this.age=age
+        this.gender=gender
+        this.country=country
+        this.nationality=nationality
+        this.university=university
+        this.add=address
+        this.hobby=hobby
+
+
+    }
+
+
+    set Name(name){
+        this.Name=name;
+    }
+
+    get showName(){
+        return  this.Name
+    }
+
+
+}
+
+
+const Girl=new girl(20 +'years','female','Germany','German','National University','Berlin','dance')
+Girl.name='Alex'
+console.log(Girl)
+
+
+const AJ=new girl(60 +'years','female','United States of America','American','Stanford University','Los Angelos','Acting')
+AJ.name='Angelina Jolie'
+console.log(AJ)
