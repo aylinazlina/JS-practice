@@ -1,0 +1,7 @@
+function greaterThen10(num){
+
+    return (num>10)? "Yes":"No";
+
+}
+
+console.log(greaterThen10(12));
