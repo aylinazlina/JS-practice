@@ -1,0 +1,5 @@
+function DataType(h){
+    return typeof h;
+}
+
+console.log(DataType("hello"));
