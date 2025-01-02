@@ -13,3 +13,22 @@ function countOccurrences(arr,target){
 }
 
 console.log(countOccurrences([1,2,2,3,3,3,1,1,5,5,5,5],1));
+
+
+//alternative way
+
+function countOccurrences(arr,target){
+    let count=0;
+    for(let el of arr){
+
+        if(el === target){
+            count++;
+        }
+
+    }
+
+    return count;
+
+}
+
+console.log(countOccurrences([1,2,2,3,3,3,1,1,5,5,5,5],2));
