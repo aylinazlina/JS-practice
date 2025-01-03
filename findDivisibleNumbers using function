@@ -1,0 +1,15 @@
+function findDivisibleNumbers(arr,divisor){
+    let divisible =[];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%divisor === 0){
+            divisible.push(arr[i]);
+
+        }
+
+    }
+
+    return divisible;
+
+}
+console.log(
+    findDivisibleNumbers([10,20,33,46,55],5));
