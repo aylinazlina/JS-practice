@@ -1,0 +1,7 @@
+function getProperty(obj,key){
+
+     return obj.name
+    //return obj[key]
+
+}
+console.log(getProperty({name:"Alice",age:20},"name"))
