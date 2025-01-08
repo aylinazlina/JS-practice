@@ -1,0 +1,12 @@
+function countKeys(obj){
+    let count =0;
+    for(let i in obj){
+        
+       count++
+    }
+
+    return count;
+
+}
+
+console.log(countKeys({name: "Bob",age : 25}));
