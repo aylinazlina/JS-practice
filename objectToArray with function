@@ -1,0 +1,21 @@
+function objectToArray(obj){
+
+    let childArray =[];
+    let parentArray =[];
+
+    for(let i in obj)
+    {
+        childArray.push(i);
+        childArray.push(obj[i]);
+        parentArray.push(childArray);
+        childArray =[];
+
+
+    }
+
+    return parentArray;
+
+
+
+}
+console.log(objectToArray({a:1,b:2}));
