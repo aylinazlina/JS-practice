@@ -1,0 +1,12 @@
+function hasKey(obj,key){
+
+    for(let i in obj){
+        if(key === i){
+            return true;
+        }
+       
+    }
+
+    return false;
+}
+console.log(hasKey({a:1,b:2},"b"));
