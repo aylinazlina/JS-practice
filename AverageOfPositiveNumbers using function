@@ -1,0 +1,25 @@
+function averagePositiveNumbers(arr){
+
+    let sum=0;
+    let count=0;
+    let average =0;
+    for(let i=0;i<arr.length;i++){
+
+        if(arr[i]>0){
+
+            count++;
+            sum =sum+arr[i];
+            average =sum/count;
+
+
+
+        }
+    }
+
+    return average;
+
+
+
+}
+
+console.log(averagePositiveNumbers([-1,2,3,-5,6]));
