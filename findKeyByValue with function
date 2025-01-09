@@ -1,0 +1,13 @@
+function findKeyByValue(obj,value){
+
+    for(let i in obj){
+        if(obj[i] === value){
+            return i ;
+        }
+
+    }
+
+    return false;
+
+}
+console.log(findKeyByValue({a:1,b:2},2));
